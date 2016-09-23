@@ -1,0 +1,5 @@
+default:
+  suites:
+    core:
+      contexts:
+        - BasketContext
