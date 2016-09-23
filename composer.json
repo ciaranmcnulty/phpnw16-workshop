@@ -1,0 +1,29 @@
+{
+    "name": "ciaranmcnulty/phpnw16-workshop",
+    "description": "Workshop for PHPNW 2016",
+    "type": "project",
+    "require-dev": {
+        "behat/behat": "^3.2",
+        "behat/mink-extension": "^2.2",
+        "behat/mink-goutte-driver": "^1.2",
+        "phpspec/phpspec": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ciaran McNulty",
+            "email": "mail@ciaranmcnulty.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "" : "src"
+        }
+    }
+}
