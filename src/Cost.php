@@ -41,4 +41,9 @@ final class Cost
     {
         return $this->pence < $cost->pence;
     }
+
+    public function __toString() : string
+    {
+        return (string) $this->pence / 100;
+    }
 }

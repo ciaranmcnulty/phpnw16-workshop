@@ -16,4 +16,9 @@ final class Sku
     {
         return new Sku($code);
     }
+
+    public function __toString() : string
+    {
+        return $this->code;
+    }
 }

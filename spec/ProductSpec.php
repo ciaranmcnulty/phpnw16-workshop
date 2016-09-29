@@ -14,8 +14,8 @@ class ProductSpec extends ObjectBehavior
         $this->beConstructedWithSku(Sku::fromCode('ABC123'));
     }
 
-    function it_is_initializable()
+    function it_can_be_transformed_to_string()
     {
-        $this->shouldHaveType(Product::class);
+        $this->__toString()->shouldReturn('ABC123');
     }
 }

@@ -13,8 +13,8 @@ class SkuSpec extends ObjectBehavior
         $this->beConstructedFromCode('ABC123');
     }
 
-    function it_is_initializable()
+    function it_can_be_transformed_to_string()
     {
-        $this->shouldHaveType(Sku::class);
+        $this->__toString()->shouldReturn('ABC123');
     }
 }

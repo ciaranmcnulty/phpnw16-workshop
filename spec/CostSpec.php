@@ -59,4 +59,9 @@ class CostSpec extends ObjectBehavior
     {
         $this->shouldNotBeLessThan(Cost::fromPence(400));
     }
+
+    function it_can_be_converted_to_a_string()
+    {
+        $this->__toString()->shouldReturn("5");
+    }
 }

@@ -16,4 +16,9 @@ final class Product
     {
         return new Product($sku);
     }
+
+    public function __toString() : string
+    {
+        return (string) $this->sku;
+    }
 }
